@@ -258,4 +258,5 @@ function selectFilter(selectedValue) {
     }
 }
 
+//перевіряє кожної секунди стан завдання
 setInterval(dedlineCheck, 1000);
