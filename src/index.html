@@ -5,437 +5,50 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Digital Ocean</title>
+    <title>Bayura To Do</title>
 </head>
 
 <body>
-    <header class="header">
-        <div class="header__top">
-            <div class="container">
-                <nav class="navbar navbar-expand-lg navbar-light">
-                    <div class="container-fluid d-flex justify-content-between">
-                        <a class="navbar-brand" href="#"><img src="images/LOGO.svg" alt="" class="header__logo"></a>
-                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup"
-                            aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
-                        <div class="collapse navbar-collapse d-lg-flex justify-content-lg-center align-items-lg-center"
-                            id="navbarNavAltMarkup">
-                            <ul class="navbar-nav d-flex align-items-center">
-                                <li class="nav-item">
-                                    <a class="nav-link active" aria-current="page" href="#">Home</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">About </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">Services</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">Reviews</a>
-                                </li>
-                            </ul>
-                        </div>
-                        <button type="button" class="none header__top-btn btn btn-primary btn-lg">Get Started</button>
-                    </div>
-                </nav>
+
+        <header class="header">
+            <div class="header__logo">
+                <p><span>Bayura</span> To-Do List</p>
             </div>
-        </div>
+        </header>
+
         <div class="container">
-            <div class="row d-flex justify-content-between align-items-center">
-                <div class="col-lg-6 col-12">
-                    <h4 class="header__title-prime text-center text-lg-start">Smart Business</h4>
-                    <h1 class="header__title text-center text-lg-start">Connecting people is our <span>business</span>
-                    </h1>
-                    <p class="header__description text-center text-lg-start">As a rule the organization settles on the
-                        inventive and media choices. Regularly it supplies supporting statistical.</p>
-                    <div class="row">
-                        <div class="col-lg-5 col-6">
-                            <button type="button" class="header__center-btn header__top-btn btn btn-primary btn-lg">Get
-                                Started</button>
-                        </div>
-                        <div class="col-lg-5 col-6 d-lg-block d-flex justify-content-end">
-                            <button type="button"
-                                class="header__center-btn-white header__top-btn btn btn-primary btn-lg d-flex justify-content-around align-items-center">
-                                <img src="images/play__btn.svg" alt="" class="play__btn"> Play Vedio</button>
-                        </div>
-                    </div>
+
+        <section class="todo__controll">    
+                <div class="doto__input d-flex">
+                    <input class="task__input" type="text" placeholder="Які у вас плани?">
+                    <input class="task__dedline" type="datetime-local">
+                    <button class="todo__add d-flex justify-content-between align-items-center">
+                        <span>Додати завдання</span>
+                        <img src="./images/icons8-plus.svg" alt="" class="todo__add__icon">
+                    </button>
                 </div>
-                <div class="col-lg-6 col-12 d-flex justify-content-end">
-                    <img src="images/Image.svg" alt="" class="header__img w-100">
+            </section>
+
+            <section class="todo">
+
+                <div class="todo__options__container d-flex justify-content-between align-items-center">
+                    <h2 class="todo__items__title">Ваші завдання</h2>
+                    <select class="todo__options">
+                        <option value="all">Всі</option>
+                        <option value="active">Активні</option>
+                        <option value="completed">Завершені</option>
+                        <option value="deleted">Просрочені</option>
+                    </select>
                 </div>
-            </div>
-        </div>
-    </header>
-    <section class="community">
-        <div class="container">
-            <div class="row d-lg-flex justify-content-lg-between flex-lg-row flex-column-reverse">
-                <div class="col-lg-6">
-                    <img src="images/section2.jpg" alt="" class="community__img">
-                </div>
-                <div class="col-lg-5 d-flex flex-column justify-content-center">
-                    <h4 class="header__title-prime text-center text-lg-start">Community</h4>
-                    <h2 class="community__title header__title text-center text-lg-start">Platform Dedicated
-                        To Promoting</h2>
-                    <p class="header__description text-center text-lg-start">Lorem ipsum dolor sit amet,
-                        consectetur adipiscing elit. Cras vestibulum sagittis ultrices consectetur
-                        adipiscing elit. fringilla quisque pulvinar..</p>
-                    <div class="row d-flex justify-content-center justify-content-lg-start">
-                        <div class="col-5">
-                            <button type="button"
-                                class="community__btn header__center-btn header__top-btn btn btn-primary btn-lg">Get
-                                Started</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="work">
-        <div class="container">
-            <div class="row">
-                <div class="col-12 d-flex justify-content-center">
-                    <h2 class="work__title">How We Work</h2>
-                </div>
-            </div>
-            <div class="row d-flex justify-content-between">
-                <div class="col-md-3">
-                    <div class="card align-items-center">
-                        <img src="images/raketa.svg" alt="" class="work__card-img">
-                        <div class="card-body">
-                            <h3 class="work__card-title text-center">Start Design</h3>
-                            <p class="work__card-description text-center">Lorem ipsum dolor sit amet, consectetur
-                                adipiscing elit. Viverra suscipit adipiscing elit.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="card align-items-center">
-                        <img src="images/2nd icon.svg" alt="" class="work__card-img">
-                        <div class="card-body">
-                            <h3 class="work__card-title text-center">Go to Code</h3>
-                            <p class="work__card-description text-center">Lorem ipsum dolor sit amet, consectetur
-                                adipiscing elit. Viverra suscipit adipiscing elit.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="card align-items-center">
-                        <img src="images/final icon.svg" alt="" class="work__card-img">
-                        <div class="card-body">
-                            <h3 class="work__card-title text-center">Final Deliverd</h3>
-                            <p class="work__card-description text-center">Lorem ipsum dolor sit amet, consectetur
-                                adipiscing elit. Viverra suscipit adipiscing elit.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="customer">
-        <div class="container">
-            <div class="row">
-                <div class="col-12 p-0">
-                    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-                        <div class="row ">
-                            <div class="col-lg-8 col-12 ">
-                                <h2 class="customer__title">What Our Customers are Saying.</h2>
-                            </div>
-                            <div class="col-12 col-lg-4">
-                                <div class="row d-flex justify-content-center mb-5">
-                                    <div class="col-2">
-                                        <button class="carousel-control-prev" type="button"
-                                            data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-                                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                            <span class="visually-hidden">Previous</span>
-                                        </button>
-                                    </div>
-                                    <div class="col-2 d-flex justify-content-end justify-content-lg-start">
-                                        <button class="carousel-control-next" type="button"
-                                            data-bs-target="#carouselExampleControls" data-bs-slide="next">
-                                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                            <span class="visually-hidden">Next</span>
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <div class="row m-0">
-                                    <div class="col-12 col-lg-4">
-                                        <div class=" customer__card card d-flex">
-                                            <div class="row">
-                                                <div class="col-2">
-                                                    <div class="customer__inner"></div>
-                                                </div>
-                                                <div class="col-10">
-                                                    <div class="customer__text">
-                                                        <p class="customer__description">I recently concluded a complete
-                                                            messaging revamp for an exciting com</p>
-                                                        <h4 class="customer__name">--- Leo Aminoff</h4>
-                                                        <p class="customer__category text-center">Product Designer</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <img src="images/ava1.png" alt="" class="customer__img">
-                                        </div>
-                                    </div>
-                                    <div class="col-12 col-lg-4">
-                                        <div class=" customer__card card d-flex">
-                                            <div class="row">
-                                                <div class="col-2">
-                                                    <div class="customer__inner"></div>
-                                                </div>
-                                                <div class="col-10">
-                                                    <div class="customer__text">
-                                                        <p class="customer__description">I recently concluded a complete
-                                                            messaging revamp for an exciting com</p>
-                                                        <h4 class="customer__name">--- Leo Aminoff</h4>
-                                                        <p class="customer__category text-center">Product Designer</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <img src="images/ava2.png" alt="" class="customer__img">
-                                        </div>
-                                    </div>
-                                    <div class="col-12 col-lg-4">
-                                        <div class=" customer__card card d-flex">
-                                            <div class="row">
-                                                <div class="col-2">
-                                                    <div class="customer__inner"></div>
-                                                </div>
-                                                <div class="col-10">
-                                                    <div class="customer__text">
-                                                        <p class="customer__description">I recently concluded a complete
-                                                            messaging revamp for an exciting com</p>
-                                                        <h4 class="customer__name">--- Leo Aminoff</h4>
-                                                        <p class="customer__category text-center">Product Designer</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <img src="images/ava3.png" alt="" class="customer__img">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="carousel-item">
-                                <div class="row m-0">
-                                    <div class="col-12 col-lg-4">
-                                        <div class=" customer__card card d-flex">
-                                            <div class="row">
-                                                <div class="col-2">
-                                                    <div class="customer__inner"></div>
-                                                </div>
-                                                <div class="col-10">
-                                                    <div class="customer__text">
-                                                        <p class="customer__description">I recently concluded a complete
-                                                            messaging revamp for an exciting com</p>
-                                                        <h4 class="customer__name">--- Leo Aminoff</h4>
-                                                        <p class="customer__category text-center">Product Designer</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <img src="images/ava1.png" alt="" class="customer__img">
-                                        </div>
-                                    </div>
-                                    <div class="col-12 col-lg-4">
-                                        <div class=" customer__card card d-flex">
-                                            <div class="row">
-                                                <div class="col-2">
-                                                    <div class="customer__inner"></div>
-                                                </div>
-                                                <div class="col-10">
-                                                    <div class="customer__text">
-                                                        <p class="customer__description">I recently concluded a complete
-                                                            messaging revamp for an exciting com</p>
-                                                        <h4 class="customer__name">--- Leo Aminoff</h4>
-                                                        <p class="customer__category text-center">Product Designer</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <img src="images/ava2.png" alt="" class="customer__img">
-                                        </div>
-                                    </div>
-                                    <div class="col-12 col-lg-4">
-                                        <div class=" customer__card card d-flex">
-                                            <div class="row">
-                                                <div class="col-2">
-                                                    <div class="customer__inner"></div>
-                                                </div>
-                                                <div class="col-10">
-                                                    <div class="customer__text">
-                                                        <p class="customer__description">I recently concluded a complete
-                                                            messaging revamp for an exciting com</p>
-                                                        <h4 class="customer__name">--- Leo Aminoff</h4>
-                                                        <p class="customer__category text-center">Product Designer</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <img src="images/ava3.png" alt="" class="customer__img">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="carousel-item">
-                                <div class="row m-0">
-                                    <div class="col-12 col-lg-4">
-                                        <div class=" customer__card card d-flex">
-                                            <div class="row">
-                                                <div class="col-2">
-                                                    <div class="customer__inner"></div>
-                                                </div>
-                                                <div class="col-10">
-                                                    <div class="customer__text">
-                                                        <p class="customer__description">I recently concluded a complete
-                                                            messaging revamp for an exciting com</p>
-                                                        <h4 class="customer__name">--- Leo Aminoff</h4>
-                                                        <p class="customer__category text-center">Product Designer</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <img src="images/ava1.png" alt="" class="customer__img">
-                                        </div>
-                                    </div>
-                                    <div class="col-12 col-lg-4">
-                                        <div class=" customer__card card d-flex">
-                                            <div class="row">
-                                                <div class="col-2">
-                                                    <div class="customer__inner"></div>
-                                                </div>
-                                                <div class="col-10">
-                                                    <div class="customer__text">
-                                                        <p class="customer__description">I recently concluded a complete
-                                                            messaging revamp for an exciting com</p>
-                                                        <h4 class="customer__name">--- Leo Aminoff</h4>
-                                                        <p class="customer__category text-center">Product Designer</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <img src="images/ava2.png" alt="" class="customer__img">
-                                        </div>
-                                    </div>
-                                    <div class="col-12 col-lg-4">
-                                        <div class=" customer__card card d-flex">
-                                            <div class="row">
-                                                <div class="col-2">
-                                                    <div class="customer__inner"></div>
-                                                </div>
-                                                <div class="col-10">
-                                                    <div class="customer__text">
-                                                        <p class="customer__description">I recently concluded a complete
-                                                            messaging revamp for an exciting com</p>
-                                                        <h4 class="customer__name">--- Leo Aminoff</h4>
-                                                        <p class="customer__category text-center">Product Designer</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <img src="images/ava3.png" alt="" class="customer__img">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        </div>
-    </section>
-    <section class="singUp">
-        <div class="container">
-            <div class="row d-flex justify-content-center">
-                <div class="col-lg-5">
-                    <h3 class="singUp__title">Sign Up to Our Newsletter</h3>
-                </div>
-            </div>
-            <div class="row d-flex justify-content-center">
-                <div class="col-lg-5">
-                    <p class="singUp__description">Yours could be one of them.</p>
-                </div>
-            </div>
-            <div class="row d-flex justify-content-center">
-                <div class="col-lg-5">
-                    <div class="input-group flex-nowrap d-flex align-items-center">
-                        <div class="input-group-prepend">
-                            <span class="input-group-text" id="addon-wrapping"><img src="images/MAIL LOGO.svg" alt=""
-                                    class="singUp__mail"></span>
-                        </div>
-                        <input type="text" class="form-control" placeholder="Enter Your Email" aria-label="Username"
-                            aria-describedby="addon-wrapping">
-                        <button type="button" class="singUp__btn btn btn-primary btn-lg">Send</button>
-                    </div>
-                </div>
-            </div>
-    </section>
-    <footer class="footer">
-        <div class="container">
-            <div class="footer__up">
-                <div class="row">
-                    <div class="col-md-3 d-flex justify-content-center justify-content-md-start">
-                        <ul class="footer__list">
-                            <li class="footer__item"><img src="images/LOGO.svg" alt="" class="footer__logo"></li>
-                            <li class="footer__item"><a href="" class="footer__link">Smart business</a></li>
-                            <li class="footer__item"><a href="" class="footer__link">Community</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-md-3 d-flex justify-content-center justify-content-md-start">
-                        <ul class="footer__list">
-                            <li class="footer__item">
-                                <h4 class="footer__title">Resources</h4>
-                            </li>
-                            <li class="footer__item"><a href="" class="footer__link">Smart Business</a></li>
-                            <li class="footer__item"><a href="" class="footer__link">Digital Marketing</a></li>
-                            <li class="footer__item"><a href="" class="footer__link">Course Creation</a></li>
-                            <li class="footer__item"><a href="" class="footer__link">Business Accelerator</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-md-3 d-flex justify-content-center justify-content-md-start">
-                        <ul class="footer__list">
-                            <li class="footer__item">
-                                <h4 class="footer__title">Mission</h4>
-                            </li>
-                            <li class="footer__item"><a href="" class="footer__link">About Digital Analyst</a></li>
-                            <li class="footer__item"><a href="" class="footer__link">Team</a></li>
-                            <li class="footer__item"><a href="" class="footer__link">Become a Partner</a></li>
-                            <li class="footer__item"><a href="" class="footer__link">Privacy Policy</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-md-3 d-flex justify-content-center justify-content-md-start">
-                        <ul class="footer__list">
-                            <li class="footer__item">
-                                <h4 class="footer__title">Contact
-                                </h4>
-                            </li>
-                            <li class="footer__item"><a href="" class="footer__link">041-774073
-                                </a></li>
-                            <li class="footer__item"><a href="mailto"
-                                    class="footer__link text-decoration-underline">hello@digitalanalyst.org</a></li>
-                            <li class="footer__item"><a href="" class="footer__link">Contact Form</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="footer__botom">
-            <div class="container">
-                <div class="row">
-                    <div class="col-sm-7 d-flex align-items-center text-center text-sm-start">
-                        <p class="footer__botom-text">© 2021 DigitalAnalyst.org. A 50 non-profit organization. EIN:
-                            -3410655</p>
-                    </div>
-                    <div class="col-sm-5 d-flex justify-content-lg-between flex-column flex-lg-row align-items-center">
-                        <a href=""><img src="images/Facebook.svg" alt="" class="footer__botom-img"></a>
-                        <a href=""><img src="images/Twiter.svg" alt="" class="footer__botom-img"></a>
-                        <a href=""><img src="images/you tube.svg" alt="" class="footer__botom-img"></a>
-                        <a href=""><img src="images/Instagram.svg" alt="" class="footer__botom-img"></a>
-                        <button type="button" class="footer__botom-btn btn btn-primary btn-lg">Get Started</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
+
+                <ul class="todo__items__overdue"></ul>
+                <ul class="todo__items" data-todo-option="active"></ul>
+                <ul class="todo__items__done"></ul>
+
+            </section>
+
+    </div>
+
 </body>
 
 </html>
