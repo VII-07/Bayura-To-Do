@@ -1,0 +1,40 @@
+@media (max-width: 750px) {
+    .header__logo{
+        margin: 10px;
+    }
+    .task{
+        &__input{
+            flex: auto;
+            border:  none;
+            margin-bottom: 20px;
+            height: 50px;
+            width: 100%;
+            margin-right: 0;
+        }
+        &__dedline{
+            height: 50px;
+            margin-bottom: 20px;
+            width: 100%;
+            margin-right: 0;
+        }
+    }
+    .todo{
+        &__add{
+            border-radius: 10px;
+            background-color: $blue;
+            span{
+                color: white;
+            }
+        }
+        &__img{
+            width: 25px;
+            height: 25px;
+        }
+        &__container{
+            padding: 10px;
+        }
+        &__title{
+            padding-left: 0;
+        }
+    }
+}

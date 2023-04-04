@@ -32,7 +32,7 @@
     margin-bottom: 10px;
     &__logo{
         font-family: 'Delicious Handrawn', cursive;
-        font-size: 30px;
+        @include adaptivFont(30, 20);
         font-weight: bold;
         color: #1A6DFF;
         cursor:default;
@@ -84,7 +84,7 @@
 
         span{
             color: #1A6DFF;
-            font-size: 18px;
+            @include adaptivFont(18, 14);
             font-family: 'Ubuntu', sans-serif;
             margin-right: 5px;
         }
@@ -95,7 +95,7 @@
     }
     &__items{
         &__title{
-            font-size: 25px;
+            @include adaptivFont(25, 18);
             color: #1A6DFF;
             margin-top: 10px;
             cursor:default;
@@ -113,14 +113,33 @@
     &__title{
         font-family: 'Ubuntu', sans-serif;
         font-weight: bold;
-        font-size: 20px;
+        @include adaptivFont(20, 15);
+        appearance: none;
+        border: none;
+        outline: none;
+        background: none;
+        border-radius: 10px;
+        padding-right: 5px;
+        padding-left: 5px;
+        overflow-wrap: break-word;
+        &:not(:read-only) {
+            background-color: $grey;
+        }
+    }
+    &__text{
+        overflow: hidden;
     }
     &__dedline{
         font-family: 'Ubuntu', sans-serif;
-        font-size: 14px;
+        @include adaptivFont(14, 12);
+        appearance: none;
+        border: none;
+        outline: none;
+        background: none;
     }
     &__options{
         border: none;
+        @include adaptivFont(18, 14);
         border-radius: 10px;
         max-height: 60px;
         min-width: 150px;
@@ -128,7 +147,7 @@
         color: #1A6DFF;
         padding: 10px;
         option{
-            font-size: 18px;
+            @include adaptivFont(18, 14);
             font-family: 'Delicious Handrawn', cursive;
         }
         &__container{
@@ -156,7 +175,7 @@
     align-items: center;
     &__text{
         color: grey;
-        font-size: 35px;
+        @include adaptivFont(35, 20);
         font-family: 'Ubuntu', sans-serif;
         cursor:default;
     }
@@ -174,3 +193,5 @@
 .subsequently {
     background-color: $orange;
 }
+
+@import 'media';
