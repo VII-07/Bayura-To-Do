@@ -15,7 +15,7 @@ let tasks = [];
 
 //зчитує з локал стореч якщо 'task' існує
 if(localStorage.getItem('tasks')){
-    tasks = JSON.parse(localStorage.getItem('tasks'));
+    tasks = JSON.parse(localStorage.getItem('tasks')).reverse();
 }
 tasks.forEach((task) => renderTask(task));
 
@@ -82,7 +82,7 @@ function addTask() {
             subsequently: false,
             overdue: false,
             }
-        tasks.push(newTask);
+        tasks.unshift(newTask);
         console.log(dateVelue);
 
         saveToLocalStorage();
@@ -189,8 +189,8 @@ function renderTask(task) {
         overdueItem.insertAdjacentHTML('afterbegin', taskHtml);
     } else if (task.subsequently === true) {
         toDoItems.insertAdjacentHTML('afterbegin', taskHtml);
-    } else {
-        toDoItems.insertAdjacentHTML("afterbegin", taskHtml);
+    }  else {
+        toDoItems.insertAdjacentHTML("beforeend", taskHtml);
     }
 }
 //перевіряє чи не вийшов дедлайн
